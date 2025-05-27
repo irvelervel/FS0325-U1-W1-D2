@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelle in HTML</title>
+  </head>
+  <body>
+    <!-- tradizionalmente, nel <body> di un documento HTML dovrebbero esserci
+        solamente 3 elementi: un <header>, un <main> e un <footer> -->
+    <header>
+      <!-- nell'header si inseriscono elementi come: barre di navigazione,
+         titoli, elementi per la ricerca etc. -->
+      <h1>Formattazione delle tabelle in HTML</h1>
+    </header>
+    <main>
+      <!-- nel main finiscono i contenuti principali della pagina -->
+      <table style="border: 1px solid black">
+        <thead>
+          <!-- nel thead ci va una riga contenente le intestazioni delle colonne,
+                 ovvero i campi th -->
+          <tr>
+            <th>Nome gioco</th>
+            <th>Anno di uscita</th>
+            <th>Genere</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Crash Bandicoot</td>
+            <td>1996</td>
+            <td>3D Platform</td>
+          </tr>
+          <tr>
+            <td>Resident Evil</td>
+            <td>1996</td>
+            <td>Survival Horror</td>
+          </tr>
+          <tr>
+            <td>Gran Turismo</td>
+            <td>1997</td>
+            <td>Driving Simulator</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">PlayStation</td>
+            <td>Sony</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <footer>
+      <!-- nel footer vanno informazioni di copyright, creatori del sito, link 
+         a risorse interne/esterne, GDPR, cookie policies etc. etc. -->
+      <p>2025 - EPICODE</p>
+    </footer>
+  </body>
+</html>
