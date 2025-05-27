@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipi di inputs in HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>Forms & Inputs</h1>
+    </header>
+    <main>
+      <form>
+        <!-- ogni input dovrebbe avere un id che lo identifica nella pagina -->
+        <!-- a fianco di ogni input dovrebbe esserci una label con un attributo
+          for di valore analogo all'attributo id dell'input che intende accompagnare -->
+
+        <div>
+          <label for="name">Nome</label>
+          <input
+            placeholder="Mario"
+            id="name"
+            required
+            maxlength="15"
+            type="text"
+          />
+        </div>
+        <div>
+          <label for="surname">Cognome</label>
+          <input
+            id="surname"
+            type="text"
+            required
+            placeholder="Bros"
+            disabled
+          />
+        </div>
+        <div>
+          <label for="age">Età</label>
+          <input id="age" type="number" min="0" max="100" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            required
+            placeholder="mariobros@nintendo.com"
+          />
+        </div>
+        <div>
+          <label for="birthdate">Data di nascita</label>
+          <input id="birthdate" type="date" required />
+        </div>
+        <div>
+          <label for="favorite-car">Auto preferita</label>
+          <select id="favorite-car">
+            <option>Fiat Panda</option>
+            <option>VW Polo</option>
+            <option>Lamborghini Murcielago</option>
+            <option>Ferrari Testarossa</option>
+          </select>
+        </div>
+        <div>
+          <label for="driving-license-a">Patente A</label>
+          <input id="driving-license-a" type="radio" value="A" name="driving" />
+        </div>
+        <div>
+          <label for="driving-license-b">Patente B</label>
+          <input id="driving-license-b" type="radio" value="B" name="driving" />
+        </div>
+        <div>
+          <label for="driving-license-c">Patente D</label>
+          <input id="driving-license-c" type="radio" value="D" name="driving" />
+        </div>
+        <div>
+          <label for="gdpr">Accetto termini e condizioni</label>
+          <input id="gdpr" type="checkbox" required />
+        </div>
+        <!-- un tag button inserito dentro un form assume AUTOMATICAMENTE
+         un comportamento di "submit" -->
+        <!-- se però un bottone all'interno del form volessi che NON inviasse
+          il form... devo esplicitamente inserirgli un attributo type="button" -->
+        <button>INVIA</button>
+        <button type="reset">RESET</button>
+      </form>
+    </main>
+    <footer>
+      <p>2025 - EPICODE</p>
+    </footer>
+  </body>
+</html>
